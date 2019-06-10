@@ -7,3 +7,7 @@
 ## voc2coco.py
 
 将voc数据的标注文件.xml文件转化为coco数据集的标注文件.json文件。
+
+## json_corrected.py
+ 
+调整json文件，删除无用类别。
