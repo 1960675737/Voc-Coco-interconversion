@@ -19,3 +19,9 @@
 ## trim_detection_model.py
 
 删除.pth格式权重文件的部分层权重。
+
+# 利用maskrcnn模型对视频进行处理
+
+## bbox_prediction_fromVideo.py
+
+读入单个视频，对视频提取帧利用maskrcnn模型预测检测结果。maskrcnn版本为pytorch时，将demo文件夹中的predictor.py修改为bbox_predictor.py。
