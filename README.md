@@ -1,4 +1,4 @@
-# 将Voc格式的xml标注的文件转换为Coco格式的json标注文件
+# 将Voc格式的xml标注的文件与Coco格式的json标注文件互转
 
 ## getData.py
 
@@ -25,3 +25,9 @@
 ## bbox_prediction_fromVideo.py
 
 读入单个视频，对视频提取帧利用maskrcnn模型预测检测结果。maskrcnn版本为pytorch时，将demo文件夹中的predictor.py修改为bbox_predictor.py。
+
+## 将maskrcnn的应用于视频预测，并转化为labelImg的.xml文件
+
+bbox_prediction_fromVideo_toXml.py,对视频提取帧利用maskrcnn模型预测检测结果,对每帧图片输出一个json文件。与 bbox_prediction_fromVideo.py的差异主要是生成的json文件不同。
+
+json2xml.py将maskrcnn-pytorch的模型预测结果转换为xml文件，可用于labelImg标注。
